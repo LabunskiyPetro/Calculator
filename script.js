@@ -30,5 +30,11 @@ mul.addEventListener("click", function () {
 div.addEventListener("click", function () {
     const a = Number(inA.value);
     const b = Number(inB.value);
-    out.innerHTML = 'Answer: ' + String(a / b);
+    if (b !== 0){
+        out.innerHTML = 'Answer: ' + String(a / b);
+    }
+    else{
+        alert('Ділення на нуль');
+    }
+    
 });
