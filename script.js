@@ -31,7 +31,12 @@ div.addEventListener("click", function () {
     const a = Number(inA.value);
     const b = Number(inB.value);
     if (b !== 0){
-        out.innerHTML = 'Answer: ' + String(a / b);
+        if (a !== 0){
+            out.innerHTML = 'Answer: ' + String(a / b);
+        }
+        else{
+            alert('Ділення нуль на нуль');
+        }
     }
     else{
         alert('Ділення на нуль');
